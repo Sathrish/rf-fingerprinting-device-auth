@@ -1,0 +1,62 @@
+{
+  "description": "Train on 12 devices (run1); test run2 chunks of the 12 enrolled devices plus 4 never-seen rogue devices. 2 folds (rogues = devices 0-3 and 8-11).",
+  "mean_over_folds": {
+    "max_softmax": {
+      "auroc": 0.4828326666666667,
+      "eer": 0.5104166666666666,
+      "far_at_95_tpr": 0.9495
+    },
+    "centroid_cosine": {
+      "auroc": 0.57405275,
+      "eer": 0.445,
+      "far_at_95_tpr": 0.9385
+    },
+    "known_closed_set_accuracy": 0.4438333333333333
+  },
+  "folds": [
+    {
+      "rogue_devices": [
+        "3123D52",
+        "3123D54",
+        "3123D58",
+        "3123D64"
+      ],
+      "known_closed_set": {
+        "accuracy": 0.41133333333333333,
+        "macro_f1": 0.4090902789495127
+      },
+      "max_softmax": {
+        "auroc": 0.44301666666666667,
+        "eer": 0.5409999999999999,
+        "far_at_95_tpr": 0.976
+      },
+      "centroid_cosine": {
+        "auroc": 0.4974826666666667,
+        "eer": 0.501,
+        "far_at_95_tpr": 0.972
+      }
+    },
+    {
+      "rogue_devices": [
+        "3123D79",
+        "3123D7B",
+        "3123D7D",
+        "3123D7E"
+      ],
+      "known_closed_set": {
+        "accuracy": 0.47633333333333333,
+        "macro_f1": 0.48383595213903546
+      },
+      "max_softmax": {
+        "auroc": 0.5226486666666667,
+        "eer": 0.47983333333333333,
+        "far_at_95_tpr": 0.923
+      },
+      "centroid_cosine": {
+        "auroc": 0.6506228333333334,
+        "eer": 0.389,
+        "far_at_95_tpr": 0.905
+      }
+    }
+  ]
+}

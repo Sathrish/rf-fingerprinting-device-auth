@@ -1,0 +1,31 @@
+{
+  "description": "Run2 test chunks with added white noise; augmented model trained with random SNR in 0-30 dB.",
+  "snr_db": [
+    30,
+    20,
+    15,
+    10,
+    5,
+    0
+  ],
+  "clean_model": [
+    0.3695,
+    0.359,
+    0.3305,
+    0.24225,
+    0.143,
+    0.085
+  ],
+  "augmented_model": [
+    0.41075,
+    0.4105,
+    0.39325,
+    0.363,
+    0.26975,
+    0.101
+  ],
+  "no_added_noise": {
+    "clean_model": 0.36975,
+    "augmented_model": 0.414
+  }
+}

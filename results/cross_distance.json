@@ -1,0 +1,15 @@
+{
+  "description": "cross_run seed-0 model (trained on 2-26 ft) tested on run2 at unseen distances.",
+  "overall": {
+    "accuracy": 0.041666666666666664,
+    "macro_f1": 0.03508448633273645
+  },
+  "per_distance": {
+    "32": 0.075,
+    "38": 0.01125,
+    "44": 0.015,
+    "50": 0.005,
+    "56": 0.09125,
+    "62": 0.0525
+  }
+}

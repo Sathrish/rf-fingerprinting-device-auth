@@ -1,0 +1,77 @@
+{
+  "description": "Random forest on impairment features: trained on run1 at 2-26 ft, tested on run2 at unseen distances, under added noise, and for rogue-device rejection.",
+  "unseen_distances": {
+    "overall": {
+      "accuracy": 0.06229166666666667,
+      "macro_f1": 0.057393053036977885
+    },
+    "per_distance": {
+      "32": 0.13375,
+      "38": 0.065,
+      "44": 0.0875,
+      "50": 0.00375,
+      "56": 0.07,
+      "62": 0.01375
+    }
+  },
+  "noise": {
+    "snr_db": [
+      30,
+      20,
+      15,
+      10,
+      5,
+      0
+    ],
+    "clean_model": [
+      0.68925,
+      0.50025,
+      0.424,
+      0.2885,
+      0.1095,
+      0.0675
+    ],
+    "augmented_model": [
+      0.70575,
+      0.66225,
+      0.5795,
+      0.4515,
+      0.3045,
+      0.1665
+    ]
+  },
+  "open_set_max_probability": {
+    "mean_over_folds": {
+      "auroc": 0.7375378333333333,
+      "eer": 0.3254166666666667,
+      "far_at_95_tpr": 0.8345,
+      "known_closed_set_accuracy": 0.7536666666666667
+    },
+    "folds": [
+      {
+        "auroc": 0.7587756666666667,
+        "eer": 0.30600000000000005,
+        "far_at_95_tpr": 0.825,
+        "known_closed_set_accuracy": 0.764,
+        "rogue_devices": [
+          "3123D52",
+          "3123D54",
+          "3123D58",
+          "3123D64"
+        ]
+      },
+      {
+        "auroc": 0.7162999999999999,
+        "eer": 0.3448333333333333,
+        "far_at_95_tpr": 0.844,
+        "known_closed_set_accuracy": 0.7433333333333333,
+        "rogue_devices": [
+          "3123D79",
+          "3123D7B",
+          "3123D7D",
+          "3123D7E"
+        ]
+      }
+    ]
+  }
+}

@@ -5,3 +5,8 @@ KRI-16Devices-RawData/
 *.zip
 *.pth
 .ipynb_checkpoints/
+
+# Python / run artefacts
+__pycache__/
+.pytest_cache/
+results_run_stdout.txt

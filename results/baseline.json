@@ -1,0 +1,11 @@
+{
+  "description": "Hand-crafted impairment features (DC offset, IQ imbalance, phase drift, amplitude stats, 32-bin PSD) + random forest.",
+  "random_split": {
+    "accuracy": 0.935625,
+    "macro_f1": 0.9327000146949149
+  },
+  "cross_run": {
+    "accuracy": 0.7075,
+    "macro_f1": 0.7032452985269613
+  }
+}

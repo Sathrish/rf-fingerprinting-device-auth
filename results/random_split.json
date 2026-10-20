@@ -1,0 +1,11 @@
+{
+  "description": "Original notebook method: first 50 consecutive chunks of every file (first ~41 ms of each 4 s recording, run1+run2), random 80/20 split, test set also used for epoch selection. Then the same model on chunks from later in the same recordings.",
+  "random_split_test": {
+    "accuracy": 0.8775,
+    "macro_f1": 0.8723268813334896
+  },
+  "same_model_later_in_same_files": {
+    "accuracy": 0.3395,
+    "macro_f1": 0.33409544998130314
+  }
+}
