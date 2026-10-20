@@ -1,0 +1,7 @@
+# Dataset (28 GB) is not stored in git - download it from the ORACLE source
+KRI-16Devices-RawData/
+*.sigmf-data
+*.sigmf-meta
+*.zip
+*.pth
+.ipynb_checkpoints/
